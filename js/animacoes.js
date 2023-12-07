@@ -1,3 +1,4 @@
+//Animações usando ScrollReveal para deixar o site mais atrativo
 window.sr = ScrollReveal({ reset: true });
 sr.reveal(".cabecalho", { duration: 2000 });
 
