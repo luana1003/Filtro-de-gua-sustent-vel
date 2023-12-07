@@ -1,3 +1,4 @@
+//Arquivo .js para dar um feedback ao usuário se os dados que ele está inserindo no fale conosco são válidos. Para isso, também usamos o plugin SweetAlert2, que é responsivo e visualmente agradável.
 const cadastrarMensagemUsuario = document.getElementById("form");
 
 if(cadastrarMensagemUsuario){
