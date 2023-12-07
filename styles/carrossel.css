@@ -1,0 +1,56 @@
+.carrossel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.carrossel__titulo{
+    font-size: 2rem;
+    font-weight: 700;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/*Container com o SwiperJS (carrossel de imagens do filtro)*/
+.swiper {
+    width: 100%;
+    padding-top: 3.125rem;
+    height: auto;
+}
+
+/*Slides do SwiperJS*/
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    /*height: auto;*/
+}
+
+/*Imagens dos slides do SwiperJS*/
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Quando um slide é passado no SwiperJS, a cor do seu marcador fica rosa choque*/
+.swiper-pagination-bullet-active{
+    background: var(--branco);
+}
+
+/*Borda do marcador das imagens do SwiperJS (branca)*/
+.swiper-pagination-bullet{
+    border: 1px solid var(--branco);
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 1220px){
+    .swiper-slide{
+        width: 25rem;
+    }
+}
+

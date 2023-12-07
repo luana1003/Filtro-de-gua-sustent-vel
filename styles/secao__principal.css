@@ -1,0 +1,64 @@
+/*Seção "Filtro de água sustentável"*/
+.secao__principal{
+    display: flex;
+    height: 92vh;
+    align-items: center;
+    background-image: url("../assets/secao_principal_fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Container com "Filtro de água sustentável* e slogan*/
+.secao__principal__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*Título "Filtro de água sustentável"*/
+.secao__principal__titulo{
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/*Texto "Uma solução para atender a quem mais precisa."*/
+.secao__principal__texto{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 800px){
+    .secao__principal{
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .secao__principal__container{
+        width: 50%;
+        margin: 0 0 0 3rem;
+    }
+
+    .secao__principal__titulo{
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .secao__principal__texto{
+        font-size: 1.3rem;
+        text-align: left;
+        width: 100%;
+    }
+
+}

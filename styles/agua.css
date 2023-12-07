@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+@import url("./secao__secundaria.css");
+
+:root {
+    --usual-font: 'Montserrat', sans-serif;
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+body {
+    color: var(--font_color);
+    background-color: var(--preto);
+    font-family: var(--usual-font);
+    width: 100%;
+}
+
+.first_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/primeiraparte.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+    font-family: var(--usual-font);
+    color: var(--branco);
+    text-align: center;
+    width: auto;
+}
+
+.first_section_title {
+    font-size: 60px;
+    font-family: var(--usual-font);
+    margin-bottom: 4%;
+    font-weight: 700;
+    padding: 4% 0;
+}
+
+.first_section_subtitle {
+    font-size: 30px;
+    flex-wrap: wrap;
+    padding: 0 1%;
+    font-family: var(--usual-font);
+}
+
+.seta{
+    width: 40px;
+    height: 60px;
+    margin-top: 80px;
+    animation-name: flutua;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: .7;
+}
+
+.first_paragraph {
+    text-align: center;
+    font-family: var(--usual-font);
+    font-size: 1.3rem;
+    margin: 5.5% 15%;
+    height: auto;
+}
+
+.second_section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3%;
+    height: 100vh;
+}
+
+.second_section_title {
+    margin: 3% 2% 6.5% 2%;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.list {
+    display: flex;
+    text-align: center;
+    font-family: var(--usual-font);
+}
+
+.image_topics {
+    max-width: 40%;
+    margin-bottom: 1%;
+}
+
+.third_section {
+    display: flex;
+    text-align: right;
+    align-items: right;
+    background-image: url("../assets/section4_bg.png");
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    flex-wrap: wrap;
+    font-family: var(--usual-font);
+    color: var(--branco);
+    margin: 7% 0 6.5% 0;
+}
+
+
+.diseases_title {
+    font-size: 2.5rem;
+    margin-right: 2%;
+    font-weight: 700;
+}
+
+.diseases_paragraph {
+    margin: 2% 2% 0 55%;
+
+}
+
+.fourth_section_title {
+    font-family: var(--usual-font);
+    font-weight: 700;
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 4% 2.5% 0 2.5%;
+}
+
+.diseases {
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 0 7% 0;
+}
+
+.diseases_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: var(--usual-font);
+}
+
+.diseases_items_image {
+    max-width: 40%;
+    margin-bottom: 1%;
+}
+
+.diseases_items_paragraph {
+    font-weight: 700;
+}
+
+.diseases_items_link {
+    border: solid 1px  var(--branco);;
+    border-radius: 15px;
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    color:  var(--branco);
+
+}
+
+.curiosities {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--usual-font);
+}
+
+.curiosities_title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.curiosities_image {
+    max-width: 15%;
+}
+
+.curiosities_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.curiosities_list_item {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.curiosities_texts {
+    max-width: 70%;
+}
+
+.curiosities_subtitle {
+    font-family: var(--usual-font);
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.curiosities_paragraph {
+
+    font-family: var(--usual-font);
+    font-size: 1.2rem;
+}
+
+#second_item {
+    margin-left: 4%;
+}
+
+#third_item {
+    margin-left: 4%;
+} 
+
+.diseases_items_link:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+    cursor: pointer;
+}
+
+.paragrafo{
+    font-size: 1.3rem;
+}
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 900px) {
+    .list {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .list_items {
+        max-width: 60%;
+        font-size: 1.3rem;
+    }
+
+    .diseases {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .curiosities {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .curiosities_list_item {
+        flex-direction: column;
+        text-align: center;
+        margin: 0%;
+        justify-content: center;
+        font-size: 1.5rem;
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+    }
+
+    .curiosities_image {
+      max-width: 45%;
+    }
+
+    #second_item {
+      margin: 0
+    }
+
+    #third_item {
+      margin: 0;
+    }
+
+    .titulo__documentario{
+        font-size: 40px;
+    }
+
+    .third_section{
+        background-position: left;
+    }
+
+    .third_section_container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .diseases_paragraph{
+        margin: 2rem 1rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .paragrafo__documentario__descricao {
+        font-size: 1.8rem;
+    }
+}
+
+
+/*ANIMAÇÕES*/
+@keyframes flutua{
+    0%{
+      transform: translateY(50px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(50px);
+    }
+}

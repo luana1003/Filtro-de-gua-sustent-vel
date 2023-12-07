@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+@import url("style.css");
+
+:root {
+  --usual-font: 'Montserrat', sans-serif;
+  --branco: #ffffff;
+  --preto: #000000;
+}
+
+body {
+    color: var(--branco);
+    background-color: var(--preto);
+    font-family: var(--usual-font);
+    width: 100%;
+}
+
+.first_section__cartilha__hq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/fundo__cartilha__hq.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+    font-family: var(--usual-font);
+    color: var(--branco);
+    text-align: center;
+    width: auto;
+}
+
+.first_section_div__cartilha__hq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_section_cartilha__hq_title {
+    font-size: 3.5rem;
+    font-family: var(--usual-font);
+    font-weight: 700;
+    padding: 7% 0;
+    width: 70%;
+}
+
+.first_section_cartilha__hq_subtitle {
+    font-size: 30px;
+    flex-wrap: wrap;
+    padding: 0 1%;
+    font-family: var(--usual-font);
+}
+
+.seta{
+    width: 40px;
+    height: 60px;
+    margin-top: 80px;
+    animation-name: flutua;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: .7;
+}
+
+.second_section_cartilha__hq {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3%;
+    height: auto;
+}
+
+.second_section_cartilha__hq_title {
+    margin: 3% 2% 6.5% 2%;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+
+.baixar__cartilha{
+    border: 3px solid var(--branco);
+    background-color: var(--preto);
+    padding: 12px 40px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.5s;
+    color: var(--branco);
+    margin-top: 15px;
+    margin-bottom: 150px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.baixar__cartilha:hover{
+    background-color:var(--branco);
+    color: var(--preto);
+    cursor: pointer;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 705px) {
+    .first_section_div__cartilha__hq{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first_section_cartilha__hq_title{
+        font-size: 3rem;
+        width: 90%;
+    }
+}
+
+
+
+@keyframes flutua{
+    0%{
+      transform: translateY(50px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(50px);
+    }
+}

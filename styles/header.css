@@ -1,0 +1,284 @@
+ul{
+  list-style-type: none;
+}
+/*Cabeçalho*/
+.cabecalho{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+/*Desabilitando a navbar do desktop e do tablet*/
+.cabecalho__navbar{
+    display: none;
+}
+
+/*Container que armazena o menu hambúrguer e os itens da navbar no mobile.
+.container{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+
+/*Checkbox do menu hambúrguer*/
+.container .menu-checkbox{
+    position: absolute;
+    z-index: 1000;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*Div das spans que formam os traços do menu hambúrguer*/
+.container .menu-lines{
+    position: absolute;
+    z-index: 999;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin: 1rem 0.3125rem 0 1rem;
+}
+
+/*Traços horizontais que formam o menu hambúrguer*/
+.container .menu-lines span{
+    display: block;
+    width: 2.1875rem;
+    height: 0.3125rem;
+    margin-bottom: 0.625rem;
+    background-color: var(--branco);
+    border-radius: 0.625rem;
+    transition: all ease .2s;
+
+}
+
+/*Quando o menu hambúrguer é clicado, sua cor muda*/
+.container .menu-checkbox:checked~.menu-lines span{
+    background-color: var(--cinza-escuro);
+}
+
+/*Cada span*/
+    /*Animação de rotação do menu hambúrguer*/
+.container .menu-checkbox:checked~.menu-lines span:nth-child(1){
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+    /*Opacity deixa um elemento presente na tela, mas de modo invisível. No caso, a segunda linha que compõe o menu fica sem visibilidade*/
+.container .menu-checkbox:checked~.menu-lines span:nth-child(2){
+    opacity: 0;
+}
+
+    /*Animação de rotação do menu hambúrguer*/
+.container .menu-checkbox:checked~.menu-lines span:nth-child(3){
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+/*Fazendo a lista de itens do menu aparecer*/
+.container .menu-checkbox:checked~.lista-menu{
+    margin-left: 0;
+    display: block;
+    position: absolute;
+}
+
+/*Estilizando os itens do menu*/
+.lista-menu{
+    display: none;
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    width: 50vw;
+    top: 0;
+    height: calc(100vh - 100px);
+    background-color: var(--branco);
+    padding-top: 100px;
+    margin-left: -40vw;
+
+}
+
+/*Estilizando o título do menu*/
+.lista-menu__titulo{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--preto);
+    margin: 0 0 1rem 1rem;
+}
+
+/*Item do menu*/
+.lista-menu__item{
+    margin: 0 0 .7rem 1rem;
+}
+
+/*Link do item do menu*/
+.lista-menu__link{
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all ease .3s;
+}
+
+/*Quando o cursor do mouse passar por cima do link, sua cor será alterada*/
+.lista-menu__link:hover{
+    color: var(--roxo);
+}
+
+/*Div com o logo e o nome do site*/
+.cabecalho__container-id{
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    align-items: center;
+    margin: .5rem .7rem 0 7rem;
+}
+
+/*Logo do site*/
+.cabecalho__container-id-logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+/*Nome do site*/
+.cabecalho__container-id-nome{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/*RESPONSIVIDADE*/
+/*Layout para tablet*/
+@media screen and (min-width: 991px){
+    /*Desabilitando o logo e o nome do site que estavam no mobile*/
+    .cabecalho__container-id{
+        display: none;
+    }
+
+    /*Estilizando o nome do site para tablet*/
+    .cabecalho__container-id-nome{
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    /*Inserindo a navbar para tablet*/
+    .cabecalho__navbar{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    /*Container para armazenar o logo, o nome e os itens da navbar*/
+    .cabecalho__navbar__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Container que armazena o nome e o logo do site*/
+    .cabecalho__navbar__container-id{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: .5rem;
+        width: 35%;
+        margin: 0 1rem 0 0;
+    }
+
+    /*Container que armazena as opções da navbar*/
+    .cabecalho__navbar__opcoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        width: 90%;
+    }
+
+    /*Elemento <li> que armazena os links da navbar*/
+    .lista-menu__item{
+        margin: 0;
+    }
+
+    .cabecalho__container-id-nome:after{
+        margin-left: 5px;
+        opacity: 1;
+    }
+    /*Links da navbar*/
+    .lista-menu__link{
+        color: var(--branco);
+        font-size: 1rem;
+    }
+
+    /*Borda embaixo e mudança de cor quando os links da navbar são acionados ou quando o cursor passa por cima deles.*/
+    .lista-menu__link:focus, .lista-menu__link:hover, .lista-menu__link:active{
+        border-bottom: 3px solid var(--roxo);
+        font-weight: 700;
+    }  
+
+    /*Container que armazena o menu hambúrguer e os itens da navbar no mobile são desativados.*/
+    .container{
+        display: none;
+    }
+}
+
+
+/*Layout para desktop*/
+@media screen and (min-width: 1728px){
+    /*Desabilitando o logo e o nome do site que estavam no mobile*/
+    .cabecalho__container-id{
+        display: none;
+    }
+
+    .menu-lines{
+        display: none;
+    }
+
+    /*Container que armazena o nome e o logo do site*/
+    .cabecalho__navbar__container-id{
+        width: 45%;
+        gap:2rem;
+    }
+
+    /*Logo do site*/
+    .cabecalho__container-id-logo{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /*Nome do site*/
+    .cabecalho__container-id-nome{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .cabecalho__container-id-nome:after{
+        margin-left: 5px;
+        opacity: 1;
+    }
+
+    /*Container que armazena as opções da navbar*/
+    .cabecalho__navbar__opcoes{
+        width: 100%;
+        gap: 3rem;
+    }
+
+    /*Elemento <li> que armazena os links da navbar*/
+    .lista-menu__item{
+        font-size: 2rem;
+    }
+
+    /*Links da navbar*/
+    .lista-menu__link{
+        color: var(--branco);
+        font-size: 1.5rem;
+    }
+
+    /*Borda embaixo e mudança de cor quando os links da navbar são acionados ou quando o cursor passa por cima deles.*/
+    .lista-menu__link:focus, .lista-menu__link:hover, .lista-menu__link:active{
+        color: var(--roxo);
+        border-bottom: 3px solid var(--roxo);
+        font-weight: 700;
+    }
+}

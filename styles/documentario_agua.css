@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+@import url("./secao__secundaria.css");
+@import url("style.css");
+@import url("./documentario_agua.css");
+@import url("./styles/carrossel.css");
+
+:root {
+  --usual-font: 'Montserrat', sans-serif;
+  --branco: #ffffff;
+  --preto: #000000;
+}
+
+body {
+    color: var(--branco);
+    background-color: var(--preto);
+    font-family: var(--usual-font);
+    width: 100%;
+}
+
+.first_section__documentario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/fundo__documentario.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+    font-family: var(--usual-font);
+    color: var(--branco);
+    text-align: center;
+    width: auto;
+}
+
+.first_section_div_documentario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.first_section_documentario_title {
+    font-size: 100px;
+    font-family: var(--usual-font);
+    margin-bottom: 4%;
+    font-weight: 700;
+    padding: 4% 0;
+    width: 70%;
+}
+
+.first_section_documentario_subtitle {
+    font-size: 30px;
+    flex-wrap: wrap;
+    padding: 0 1%;
+    font-family: var(--usual-font);
+}
+
+.seta{
+    width: 40px;
+    height: 60px;
+    margin-top: 80px;
+    animation-name: flutua;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: .7;
+}
+
+.first_paragraph_documentario {
+    text-align: center;
+    font-family: var(--usual-font);
+    font-size: 1.3rem;
+    margin: 5.5% 15% 5.5% 15%;
+    height: auto;
+}
+
+.second_section_documentario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3%;
+    height: auto;
+}
+
+.second_section_documentario_title {
+    margin: 3% 2% 6.5% 2%;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+
+figure { width: 90%; min-width: 17.5em; margin:0 auto;}
+figcaption { font: 120% sans-serif; text-align: center;}
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c-botao{
+  margin: 2rem 0 0 0;
+    
+}
+
+.c-botao a{
+    border: 3px solid var(--branco);
+    background-color: var(--preto);
+    padding: 12px 40px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.5s;
+    color: var(--branco);
+    text-decoration: none;
+    margin: 1rem 0 0 0;
+}
+
+.c-botao a:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+    cursor: pointer;
+}
+
+.botao__transcricao{
+    margin-top: 15px;
+    margin-bottom: 150px;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1000px) {
+    .first_section_documentario_title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .first_section_documentario_title{
+        font-size: 5rem;
+    }
+
+    .first_paragraph_documentario {
+        font-size: 1.5rem;
+    }
+
+    .second_section_documentario_title{
+        font-size: 3rem;
+    }
+    .second_section_div_documentario_video{
+        width: 100%;
+    }
+}
+
+/*ANIMAÇÕES*/
+@keyframes flutua{
+    0%{
+      transform: translateY(50px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(50px);
+    }
+}
