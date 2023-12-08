@@ -1,0 +1,28 @@
+/*Estilização geral do projeto, especialmente da página Home*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("./styles/header.css");
+@import url("./styles/footer.css");
+@import url("./styles/secao__principal.css");
+@import url("./styles/secao__secundaria.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/cards__etapas__filtracao.css");
+@import url("./styles/reset.css");
+
+
+:root{
+    --branco: #ffffff;
+    --preto: #000000;
+    --roxo: #714bc8;
+    --cinza-escuro: #121214;
+    --fonte-principal: "Montserrat";
+    --cinza-intermediario:#242427;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    max-height: 100vh;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
