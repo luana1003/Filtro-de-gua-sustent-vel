@@ -1,4 +1,7 @@
 <?php
+    //Arquivo para salvar as mensagens do formulário de fale conosco no banco de dados.
+
+    //include_once: chamando o arquivo de conexão com o banco de dados do 000webhost.
     include_once('conexao.php');
     $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
