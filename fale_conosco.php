@@ -69,38 +69,38 @@
     
             <!--Navbar: tablet e desktop-->
             <nav class="cabecalho__navbar">
-            <div class="cabecalho__navbar__container">
-                <div class="cabecalho__navbar__container-id">
-                <img src="assets/logo.svg" class="cabecalho__container-id-logo" alt="Logo Afluente do Saber">
-                <h2 class="cabecalho__container-id-nome"> AFLUENTE DO SABER</h2>
+                <div class="cabecalho__navbar__container">
+                    <div class="cabecalho__navbar__container-id">
+                    <img src="assets/logo.svg" class="cabecalho__container-id-logo" alt="Logo Afluente do Saber">
+                    <h2 class="cabecalho__container-id-nome"> AFLUENTE DO SABER</h2>
+                    </div>
+        
+                    <ul class="cabecalho__navbar__opcoes">
+                    <li class="lista-menu__item">
+                        <a href="./index.html" class="lista-menu__link">Home</a>
+                    </li>
+        
+                    <li class="lista-menu__item">
+                        <a href="./Agua.html" class="lista-menu__link">A água</a>
+                    </li>
+        
+                    <li class="lista-menu__item">
+                        <a href="./Documentario.html" class="lista-menu__link">Documentário</a>
+                    </li>
+        
+                    <li class="lista-menu__item">
+                        <a href="./cartilha_hq.html" class="lista-menu__link">Cartilha e HQ</a>
+                    </li>
+        
+                    <li class="lista-menu__item">
+                        <a href="http://localhost/Filtro-de-agua-sustentavel/fale_conosco.php" class="lista-menu__link">Fale conosco</a>
+                    </li>
+        
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Trabalhos da Comunidade</a>
+                    </li>
+                    </ul>
                 </div>
-    
-                <ul class="cabecalho__navbar__opcoes">
-                <li class="lista-menu__item">
-                    <a href="./index.html" class="lista-menu__link">Home</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                    <a href="./Agua.html" class="lista-menu__link">A água</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                    <a href="./Documentario.html" class="lista-menu__link">Documentário</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                    <a href="./cartilha_hq.html" class="lista-menu__link">Cartilha e HQ</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                    <a href="http://localhost/Filtro-de-agua-sustentavel/fale_conosco.php" class="lista-menu__link">Fale conosco</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Trabalhos da Comunidade</a>
-                </li>
-                </ul>
-            </div>
             </nav>
     
     
