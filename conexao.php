@@ -1,12 +1,12 @@
 <?php 
+    //Arquivo para conexão com o banco de dados no 000webhost;
     $servidor = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $dbname = "contato";
+    $usuario = "id21571594_luana";
+    $senha = "Filtro2023!";
+    $dbname = "id21571594_faleconosco";
 
     try{
         $conn = new PDO("mysql:host=$servidor;dbname=" . $dbname, $usuario, $senha);
-        //echo "conectado com êxito!";
     }
 
     catch (PDOException $err){
