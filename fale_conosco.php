@@ -28,56 +28,20 @@
         <!--Cabeçalho/navbar-->
         <header class="cabecalho">
             <div class="container">
-            <!--Menu hambúrguer (layout mobile)-->
-            <input type="checkbox" class="menu-checkbox" />
-            <div class="menu-lines">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-    
-    
-            <!--Itens do cabeçalho-->
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Atividades</li>
-                <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Home</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                <a href="./Agua.html" class="lista-menu__link">A água</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                <a href="./Documentario.html" class="lista-menu__link">Documentário</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                <a href="./cartilha_hq.html" class="lista-menu__link">Cartilha e HQ</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                    <a href="http://localhost/Filtro-de-agua-sustentavel/fale_conosco.php" class="lista-menu__link">Fale conosco</a>
-                </li>
-    
-                <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Trabalhos da Comunidade</a>
-                </li>
-    
-            </ul>
-            </div>
-    
-            <!--Navbar: tablet e desktop-->
-            <nav class="cabecalho__navbar">
-                <div class="cabecalho__navbar__container">
-                    <div class="cabecalho__navbar__container-id">
-                    <img src="assets/logo.svg" class="cabecalho__container-id-logo" alt="Logo Afluente do Saber">
-                    <h2 class="cabecalho__container-id-nome"> AFLUENTE DO SABER</h2>
-                    </div>
+                <!--Menu hambúrguer (layout mobile)-->
+                <input type="checkbox" class="menu-checkbox" />
+                <div class="menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
         
-                    <ul class="cabecalho__navbar__opcoes">
+        
+                <!--Itens do cabeçalho-->
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Atividades</li>
                     <li class="lista-menu__item">
-                        <a href="./index.html" class="lista-menu__link">Home</a>
+                        <a href="#" class="lista-menu__link">Home</a>
                     </li>
         
                     <li class="lista-menu__item">
@@ -85,21 +49,48 @@
                     </li>
         
                     <li class="lista-menu__item">
-                        <a href="./Documentario.html" class="lista-menu__link">Documentário</a>
+                        <a href="./documentario_agua.html" class="lista-menu__link">Documentário</a>
                     </li>
         
                     <li class="lista-menu__item">
-                        <a href="./cartilha_hq.html" class="lista-menu__link">Cartilha e HQ</a>
+                        <a href="./cartilha_hq_vf.html" class="lista-menu__link">Cartilha e HQ</a>
                     </li>
         
                     <li class="lista-menu__item">
-                        <a href="http://localhost/Filtro-de-agua-sustentavel/fale_conosco.php" class="lista-menu__link">Fale conosco</a>
+                        <a href="fale_conosco.php">Fale conosco</a>
                     </li>
-        
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Trabalhos da Comunidade</a>
-                    </li>
-                    </ul>
+                </ul>
+            </div>
+    
+            <!--Navbar: tablet e desktop-->
+            <nav class="cabecalho__navbar">
+                <div class="cabecalho__navbar__container">
+                    <div class="cabecalho__navbar__container-id">
+                        <img src="assets/logo.svg" class="cabecalho__container-id-logo" alt="Logo Afluente do Saber">
+                        <h2 class="cabecalho__container-id-nome"> AFLUENTE DO SABER</h2>
+                        </div>
+            
+                        <ul class="cabecalho__navbar__opcoes">
+                        <li class="lista-menu__item">
+                            <a href="./index.html" class="lista-menu__link">Home</a>
+                        </li>
+            
+                        <li class="lista-menu__item">
+                            <a href="./Agua.html" class="lista-menu__link">A água</a>
+                        </li>
+            
+                        <li class="lista-menu__item">
+                            <a href="./documentario_agua.html" class="lista-menu__link">Documentário</a>
+                        </li>
+            
+                        <li class="lista-menu__item">
+                            <a href="./cartilha_hq_vf.html" class="lista-menu__link">Cartilha e HQ</a>
+                        </li>
+            
+                        <li class="lista-menu__item">
+                            <a href="fale_conosco.php">Fale conosco</a>
+                        </li>
+                        </ul>
                 </div>
             </nav>
     
@@ -188,11 +179,11 @@
                 </li>
     
                 <li class="rodape__container__desktop__coluna3__lista__item">
-                    <a href="./Documentario.html" class="rodape__container__desktop__coluna3__lista__item__link">Documentário</a>
+                    <a href="./documentario_agua.html" class="rodape__container__desktop__coluna3__lista__item__link">Documentário</a>
                 </li>
     
                 <li class="rodape__container__desktop__coluna3__lista__item">
-                    <a href="./cartilha_hq.html" class="rodape__container__desktop__coluna3__lista__item__link">Cartilha e HQ</a>
+                    <a href="./cartilha_hq_vf.html" class="rodape__container__desktop__coluna3__lista__item__link">Cartilha e HQ</a>
                 </li>
                 </ul>
             </div>
